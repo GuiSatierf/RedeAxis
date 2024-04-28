@@ -53,8 +53,6 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #000;
-	border-top: 1px solid #000;
 	z-index: 9;
 }
 
@@ -257,5 +255,10 @@ a {
 
 	.next_btn {
 		right: 50px;
+	}
+
+	.nav-menu {
+		border-bottom: 1px solid #000;
+		border-top: 1px solid #000;
 	}
 }
