@@ -50,7 +50,7 @@
   z-index: 999;
 }
 .header .navbar .nav-logo img {
-  width: 10%;
+  width: 50px;
 }
 .header .navbar ul {
   display: flex;
@@ -198,10 +198,9 @@
   background: #000;
   padding: 100px 0;
   width: 100%;
-  height: 100vh;
 }
-.discord .cake {
-  width: 15%;
+.discord img {
+  width: 350px;
   margin: 0 150px;
 }
 .discord .text_container {
@@ -212,10 +211,11 @@
   font-size: 22px;
   margin: 0 60px;
   color: #fff;
-  width: 40%;
+  width: 50%;
 }
 .discord .text_container p {
   margin: 20px 0;
+  width: 80%;
 }
 .discord .text_container .effect {
   transition: all 0.2s linear 0s;
@@ -365,15 +365,9 @@
 }
 
 .text-box-middle {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4235294118);
-}
-
-.text-box-lower {
-  font-size: 2rem;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4235294118);
-  font-weight: 400;
 }
 
 .heading {
@@ -447,6 +441,35 @@
   background-image: linear-gradient(rgba(31, 136, 168, 0.767), rgba(14, 46, 65, 0.9)), url("/public/img/nida5.jpg");
 }
 
+@media screen and (max-width: 1220px) {
+  .text-box-top {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4235294118);
+    font-weight: 400;
+  }
+  .text-box-middle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4235294118);
+  }
+}
+@media screen and (max-width: 1110px) {
+  .discord {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .discord img {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+  .discord .text_container {
+    align-items: center;
+    text-align: center;
+  }
+  .discord .text_container p {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .grids {
     max-width: 136rem;
@@ -552,5 +575,19 @@
   }
   .card-seven {
     grid-column: 2/4;
+  }
+}
+@media screen and (max-width: 450px) {
+  .discord img {
+    width: 250px;
+  }
+  .discord .text_container {
+    width: 80%;
+  }
+  .text-box-top {
+    font-size: 1.2rem;
+  }
+  .text-box-middle {
+    font-size: 1.6rem;
   }
 }/*# sourceMappingURL=style.css.map */
