@@ -60,8 +60,22 @@
 		border-bottom: 1px solid #0de80e;
 		z-index: 999;
 
-		.nav-logo img {
-			width: 50px;
+		.nav-logo {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			text-decoration: none;
+			color: #fff;
+			font-size: 28px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+
+			img {
+				width: 50px;
+				margin: 0 10px;
+			}
 		}
 
 		ul {
@@ -118,6 +132,7 @@
 		height: 540px;
 		overflow: hidden;
 		position: relative;
+		border-radius: 10px;
 	}
 
 	.slide_group {
@@ -534,7 +549,6 @@
 		url("/public/img/nida5.jpg");
 }
 
-
 @media screen and (max-width: 1220px) {
 
 	.text-box-top {
@@ -621,10 +635,12 @@
 			ul {
 				display: block;
 				position: fixed;
+				background: #000;
 				left: -100%;
-				top: 4.8rem;
+				top: 5.9rem;
 				flex-direction: column;
 				width: 100%;
+				border-top: 1px solid #0de80e;
 				border-radius: 0 0 10px 10px;
 				text-align: center;
 				transition: 0.3s;

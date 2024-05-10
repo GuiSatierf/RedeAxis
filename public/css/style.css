@@ -49,8 +49,20 @@
   border-bottom: 1px solid #0de80e;
   z-index: 999;
 }
+.header .navbar .nav-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 .header .navbar .nav-logo img {
   width: 50px;
+  margin: 0 10px;
 }
 .header .navbar ul {
   display: flex;
@@ -96,6 +108,7 @@
   height: 540px;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 .carousel .slide_group {
   height: 100%;
@@ -505,10 +518,12 @@
   .header .navbar ul {
     display: block;
     position: fixed;
+    background: #000;
     left: -100%;
-    top: 4.8rem;
+    top: 5.9rem;
     flex-direction: column;
     width: 100%;
+    border-top: 1px solid #0de80e;
     border-radius: 0 0 10px 10px;
     text-align: center;
     transition: 0.3s;
