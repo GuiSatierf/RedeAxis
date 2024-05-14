@@ -58,4 +58,4 @@ function rotateCards() {
   }
 }
 
-setInterval(rotateCards, 5000);
+setInterval(rotateCards, 6000);
