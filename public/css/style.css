@@ -509,6 +509,151 @@
   text-transform: uppercase;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  background: #141414;
+  width: 100%;
+}
+.about .desc {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+}
+.about .desc .desc_title {
+  width: 50%;
+  margin: 0 60px;
+  color: #0de80e;
+  font-size: 32px;
+}
+.about .desc .desc_text {
+  width: 50%;
+  margin: 0 60px;
+  color: #fff;
+  font-size: 22px;
+}
+.about .desc .desc_text ul {
+  list-style: none;
+}
+.about .desc .desc_text ul .list_mark_one {
+  margin: 12px 0;
+}
+.about .desc .desc_text ul .list_mark_two {
+  margin-top: 50px;
+}
+
+.shop_cards {
+  display: flex;
+  height: 80vh;
+  padding: 100px 32px;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+  box-shadow: rgba(75, 75, 75, 0.35) 0px 5px 15px;
+}
+.shop_cards .shop_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
+  font-weight: 400;
+}
+.shop_cards .shop_card:first-child {
+  margin-left: 0;
+}
+.shop_cards .shop_card:nth-child(1) {
+  background: purple;
+}
+.shop_cards .shop_card:nth-child(2) {
+  background: crimson;
+}
+.shop_cards .shop_card:nth-child(3) {
+  background: orangered;
+}
+.shop_cards .shop_card .icon {
+  width: 64px;
+  height: 64px;
+}
+.shop_cards .shop_card img {
+  width: 80%;
+}
+.shop_cards .shop_card h3 {
+  font-size: 22px;
+  margin: 16px 0;
+}
+.shop_cards .shop_card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.shop_cards .shop_card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: #141414;
+  margin-bottom: 16px 0;
+}
+.shop_cards .shop_card button:last-child {
+  margin-bottom: 0;
+}
+.shop_cards .shop_card button.triggerOne {
+  background: #191919;
+}
+.shop_cards .shop_card button.triggerTwo {
+  background: #191919;
+}
+.shop_cards .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.shop_cards .modal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #191919;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+.shop_cards .modal .modal-content ul {
+  list-style: none;
+  text-align: left;
+}
+.shop_cards .modal .close-modal {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.shop_cards .show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 .footer {
   background: #000;
   padding: 30px 0px;
@@ -733,5 +878,20 @@
   }
   .footer .row a i {
     margin: 0% 3%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .shop_cards {
+    flex-direction: column;
+  }
+  .shop_cards .shop_card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+  .shop_cards .shop_card:last-child {
+    margin-bottom: 0;
+  }
+  .shop_cards .shop_card button {
+    font-size: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
